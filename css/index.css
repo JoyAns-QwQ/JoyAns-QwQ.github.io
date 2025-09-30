@@ -2195,13 +2195,13 @@ kbd {
   left: 0;
 }
 .mode-track-moon::before {
-  content: '/images/月亮.png';
+  content: '🌑';
 }
 .mode-track-sun {
   right: 0;
 }
 .mode-track-sun::before {
-  content: '/images/太阳.png';
+  content: '☀️';
 }
 .mode-thumb {
   position: absolute;
