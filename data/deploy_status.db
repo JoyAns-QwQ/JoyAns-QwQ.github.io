@@ -1,1 +1,1 @@
-{"type":"status","isDeploying":false,"progress":0,"stage":"idle","lastDeployTime":"","logs":[],"error":null,"_id":"NBXZ3sxwhH52Pj9P"}
+{"type":"status","isDeploying":false,"progress":0,"stage":"idle","lastDeployTime":"","logs":["deploy.status.reset","deploy.git.copying.files"],"error":null,"_id":"NBXZ3sxwhH52Pj9P"}

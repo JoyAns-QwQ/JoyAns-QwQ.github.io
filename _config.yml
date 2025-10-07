@@ -63,8 +63,9 @@ ignore: null
 theme: stun
 deploy:
   type: git
-  repository: https://github.com/JoyAns-QwQ/JoyAns-QwQ.github.io.git
+  repo: https://github.com/JoyAns-QwQ/JoyAns-QwQ.github.io.git
   branch: main
+  message: 'Site updated: {{ now("YYYY-MM-DD HH:mm:ss") }}'
 archive_generator:
   enabled: true
   per_page: 0
