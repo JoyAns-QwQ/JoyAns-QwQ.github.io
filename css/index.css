@@ -2785,3 +2785,76 @@ pre code {
   line-height: 1.5;
   font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
 }
+.highlight:hover .copy-btn {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 12px;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #333;
+}
+.copy-btn:hover {
+  background: rgba(0,0,0,0.2);
+  -webkit-transform: translateY(-1px);
+  -moz-transform: translateY(-1px);
+  -o-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+@media (prefers-color-scheme: dark) {
+  .copy-btn {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.2);
+    color: #f8f8f2;
+  }
+  .copy-btn:hover {
+    background: rgba(255,255,255,0.2);
+  }
+}
+.nightmode .highlight {
+  background: #1e1e1e !important;
+  color: #d4d4d4 !important;
+}
+.nightmode .highlight * {
+  color: inherit !important;
+  background: transparent !important;
+}
+.nightmode .highlight pre code {
+  background: #1e1e1e !important;
+  color: #d4d4d4 !important;
+}
+@media (prefers-color-scheme: dark) {
+  .copy-btn {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.3);
+    color: #fff;
+  }
+  .copy-btn:hover {
+    background: rgba(255,255,255,0.2);
+  }
+}
+.nightmode .copy-btn {
+  background: rgba(255,255,255,0.1) !important;
+  border-color: rgba(255,255,255,0.3) !important;
+  color: #fff !important;
+}
+.nightmode .copy-btn:hover {
+  background: rgba(255,255,255,0.2) !important;
+}
